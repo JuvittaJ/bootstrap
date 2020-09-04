@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="fullview">
+    <div class="container-fluid my-4 py-2">
+      <h6><b>Personal Details</b></h6>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-lg-3">
+            <label for="firstname">First Name <span class="red">*</span></label>
+          </div>
+          <div class="col-lg-6">
+            <label for="lastname">Last Name <span class="red">*</span></label>
+          </div>
+        </div>
+        <div class="row bottom">
+          <div class="col-lg-3">
+            <input type="text" name="firstname" placeholder="First name" />
+          </div>
+          <div class="col-lg-6">
+            <input type="text" name="lastname" placeholder="Last name" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <label for="email">Email <span class="red">*</span></label>
+          </div>
+          <div class="col-lg-6">
+            <label for="number">Mobile Number <span class="red">*</span></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <input type="email" name="email" placeholder="Email" />
+          </div>
+          <div class="col-lg-6">
+            <input type="text" name="number" placeholder="Mobile number" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid my-4 py-2">
+      <h6 class="bottom"><b>Academic Details</b></h6>
+      <div class="form-group">
+        <div class="form-group row">
+          <label for="cName" class="control-label col-md-2"
+            >College Name <span class="red">*</span></label
+          >
+          <input type="text" name="CollegeName" placeholder="College Name" />
+        </div>
+        <div class="form-group row">
+          <label for="dName" class="control-label col-md-2"
+            >Department Name <span class="red">*</span></label
+          >
+          <input
+            type="text"
+            name="DepartmentName"
+            placeholder="Department Name"
+          />
+        </div>
+        <div class="form-group row">
+          <label for="rNo" class="control-label col-md-2">Roll Number</label>
+          <input type="text" name="RollNumber" placeholder="Roll Number" />
+        </div>
+        <div class="form-group row">
+          <label for="gYr" class="control-label col-md-2"
+            >Graduating Year</label
+          >
+          <input type="text" name="GraduatingYear" value="Graduating Year" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid my-4 py-2">
+      <h6 class="bottom"><b>Other Details</b></h6>
+      <div class="form-group">
+        <div class="row bottom">
+          <div class="col-lg-5 width">
+            <label for="AOI" class="sizing"
+              >Area of Interest <span class="red">*</span></label
+            >
+            <input type="text" name="AOI" placeholder="Area of Interest" />
+          </div>
+          <div class="col-lg-5">
+            <label for="hobby" class="sizing">Hobby</label>
+            <input type="text" name="hobby" placeholder="Hobby" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5">
+            <label for="gYear" class="sizing">Graduating Year</label>
+            <input type="text" name="gYear" placeholder="Graduating Year" />
+          </div>
+          <div class="col-lg-5">
+            <label for="gyear" class="sizing">Graduating Year</label>
+            <input type="text" name="gYear" placeholder="Graduating Year" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary button mr-5 py-3">Save</button>
+    <button type="button" class="btn btn-primary button mr-5 py-3">Edit</button>
+  </body>
+</html>
