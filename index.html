@@ -2,33 +2,46 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="main.css" />
-    <title>Bootstrap</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
+    <title>Bootstrap</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+      .fullview {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+      }
+      h6 {
+        font-family: "Playfair Display", serif;
+        letter-spacing: 1px;
+      }
+      .red {
+        color: #fb5678;
+      }
+      .sizing {
+        width: 22%;
+      }
+      .container-fluid {
+        width: auto !important;
+        margin-right: 3% !important;
+        margin-left: 3% !important;
+      }
+      .button {
+        font-family: "Inter", sans-serif !important;
+        font-size: 12px !important;
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+      }
+    </style>
   </head>
-  <body class="fullview">
-    <div class="container-fluid my-4 py-2">
-      <h6><b>Personal Details</b></h6>
+  <body class="fullview bg-light">
+    <div class="container-fluid my-4 py-2 bg-white rounded-lg">
+      <h6 class="py-2"><b>Personal Details</b></h6>
 
       <div class="form-group">
         <div class="row">
@@ -39,12 +52,22 @@
             <label for="lastname">Last Name <span class="red">*</span></label>
           </div>
         </div>
-        <div class="row bottom">
+        <div class="row mb-2">
           <div class="col-lg-3">
-            <input type="text" name="firstname" placeholder="First name" />
+            <input
+              type="text"
+              name="firstname"
+              placeholder="First name"
+              class="rounded-sm border border-secondary pr-5"
+            />
           </div>
           <div class="col-lg-6">
-            <input type="text" name="lastname" placeholder="Last name" />
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Last name"
+              class="rounded-sm border border-secondary pr-5"
+            />
           </div>
         </div>
         <div class="row">
@@ -57,23 +80,38 @@
         </div>
         <div class="row">
           <div class="col-lg-3">
-            <input type="email" name="email" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="rounded-sm border border-secondary pr-5"
+            />
           </div>
           <div class="col-lg-6">
-            <input type="text" name="number" placeholder="Mobile number" />
+            <input
+              type="text"
+              name="number"
+              placeholder="Mobile number"
+              class="rounded-sm border border-secondary pr-5"
+            />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid my-4 py-2">
-      <h6 class="bottom"><b>Academic Details</b></h6>
+    <div class="container-fluid my-4 py-2 bg-white rounded-lg">
+      <h6 class="py-2"><b>Academic Details</b></h6>
       <div class="form-group">
         <div class="form-group row">
           <label for="cName" class="control-label col-md-2"
             >College Name <span class="red">*</span></label
           >
-          <input type="text" name="CollegeName" placeholder="College Name" />
+          <input
+            type="text"
+            name="CollegeName"
+            placeholder="College Name"
+            class="rounded-sm border border-secondary pr-5"
+          />
         </div>
         <div class="form-group row">
           <label for="dName" class="control-label col-md-2"
@@ -83,48 +121,85 @@
             type="text"
             name="DepartmentName"
             placeholder="Department Name"
+            class="rounded-sm border border-secondary pr-5"
           />
         </div>
         <div class="form-group row">
           <label for="rNo" class="control-label col-md-2">Roll Number</label>
-          <input type="text" name="RollNumber" placeholder="Roll Number" />
+          <input
+            type="text"
+            name="RollNumber"
+            placeholder="Roll Number"
+            class="rounded-sm border border-secondary pr-5"
+          />
         </div>
         <div class="form-group row">
           <label for="gYr" class="control-label col-md-2"
             >Graduating Year</label
           >
-          <input type="text" name="GraduatingYear" value="Graduating Year" />
+          <input
+            type="text"
+            name="GraduatingYear"
+            placeholder="Graduating Year"
+            class="rounded-sm border border-secondary pr-5"
+          />
         </div>
       </div>
     </div>
-    <div class="container-fluid my-4 py-2">
-      <h6 class="bottom"><b>Other Details</b></h6>
+    <div class="container-fluid my-4 py-2 bg-white rounded-lg">
+      <h6 class="bottom py-2"><b>Other Details</b></h6>
       <div class="form-group">
-        <div class="row bottom">
-          <div class="col-lg-5 width">
+        <div class="row mb-2">
+          <div class="col-lg-5">
             <label for="AOI" class="sizing"
               >Area of Interest <span class="red">*</span></label
             >
-            <input type="text" name="AOI" placeholder="Area of Interest" />
+            <input
+              type="text"
+              name="AOI"
+              placeholder="Area of Interest"
+              class="rounded-sm border border-secondary pr-5"
+            />
           </div>
           <div class="col-lg-5">
             <label for="hobby" class="sizing">Hobby</label>
-            <input type="text" name="hobby" placeholder="Hobby" />
+            <input
+              type="text"
+              name="hobby"
+              placeholder="Hobby"
+              class="rounded-sm border border-secondary pr-5"
+            />
           </div>
         </div>
         <div class="row">
           <div class="col-lg-5">
             <label for="gYear" class="sizing">Graduating Year</label>
-            <input type="text" name="gYear" placeholder="Graduating Year" />
+            <input
+              type="text"
+              name="gYear"
+              placeholder="Graduating Year"
+              class="rounded-sm border border-secondary pr-5"
+            />
           </div>
           <div class="col-lg-5">
             <label for="gyear" class="sizing">Graduating Year</label>
-            <input type="text" name="gYear" placeholder="Graduating Year" />
+            <input
+              type="text"
+              name="gYear"
+              placeholder="Graduating Year"
+              class="rounded-sm border border-secondary pr-5"
+            />
           </div>
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-primary button mr-5 py-3">Save</button>
-    <button type="button" class="btn btn-primary button mr-5 py-3">Edit</button>
+    <div class="float-right">
+      <button type="button" class="btn btn-primary button mr-5 py-3">
+        Save
+      </button>
+      <button type="button" class="btn btn-primary button mr-5 py-3">
+        Edit
+      </button>
+    </div>
   </body>
 </html>
